@@ -15,7 +15,7 @@ kubectl get svc
 
 ```
 kubectl run test --image-busybox -it --rm -- sh
-wget -qo- http://web
+wget -qo- http://web.<namespace>.svc.cluster.local
 ```
 
 ## Step 4: Clean up
